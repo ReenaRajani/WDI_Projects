@@ -1,0 +1,70 @@
+<!-- starwars background : http://images.alphacoders.com/107/107611.jpg
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+  <link href='http://fonts.googleapis.com/css?family=Monoton|Orbitron:400,700|Rock+Salt|Indie+Flower|Pacifico|Lobster+Two:400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/hover.css" media="all">
+  
+  <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/0.6.0/tweenjs.min.js"> </script>
+  <script type="text/javascript" src="js/tictactoe.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    
+      <h1> Ready to play Wars Tac Toe  !!! </h1>
+
+      <div class ="Battle_ground">
+        <div class = "playgrid" id ="t1" data-clicked="false"></div>
+        <div class = "playgrid" id ="t2" data-clicked="false"></div>
+        <div class = "playgrid" id ="t3" data-clicked="false"></div>
+        <div class = "playgrid" id ="t4" data-clicked="false"></div>
+        <div class = "playgrid" id ="t5" data-clicked="false"></div>
+        <div class = "playgrid" id ="t6" data-clicked="false"></div>
+        <div class = "playgrid" id ="t7" data-clicked="false"></div>
+        <div class = "playgrid" id ="t8" data-clicked="false"></div>
+        <div class = "playgrid" id ="t9" data-clicked="false"></div>
+      </div>
+
+      <div  class ="MessageBoard">  Battle Scores
+
+        <div class = "info" id="Jedi" > Yoda Wins :  </div>
+        <div class = "info" id="Sith">  Darth Wins :</div>
+        <div class = "info" id="NoMansGame"> Draw : </div>
+
+      </div>
+
+      <div class="selectors">  Selectors 
+        
+        <p> Yoda Player </p>
+        <img src="Images/Yoda1" alt="Jedi1" id="j1" class="imgs">
+        <img src="Images/Yoda2" alt="Jedi2" id ="j2" class="imgs">
+        <p> Darth Player </p>
+        <img src="Images/Darth1" alt="Sith1" id ="d1" class="imgs">
+        <img src="Images/Darth2" alt="Sith2" id ="d2" class="imgs">
+
+      </div>
+      
+      <div class ="settings">
+         <button id="skin">Choose Players</button>
+          <button id ="Reset">Reset</button>
+          <button id ="Battle3 "> Best of 3</button>
+      </div>
+
+
+  </div>
+
+  
+</body>
+</html>
