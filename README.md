@@ -18,4 +18,7 @@ checkpoints
 
 
 
-
+What can be improved 
+======================
+* usage if Images instead of plain drawing 
+* check for the wierd thing that is happening when i have more than three clicks 
