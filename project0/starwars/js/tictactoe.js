@@ -58,13 +58,13 @@ $('.playgrid').on('click',function() {
     if(currentPlayer === "Yoda") {
 
       movestr = 'Yoda';
-      playSound("../sounds/SaberOn.wav");
+      playSound("../sounds/SaberOn.mp3");
       $(this).addClass('yoda');
 
     }else {
 
       movestr ='Darth';
-      playSound("../sounds/sw4-lightsabre.wav");
+      playSound("../sounds/sw4-lightsabre.mp3");
       $(this).addClass('darth');
 
     } 
