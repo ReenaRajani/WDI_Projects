@@ -8,6 +8,19 @@ Things to work Further
 5. Display the battle scores on the Message Board . 
 6. Effects - on load, an alien ship must enter the screen and then the whole page must be loaded // try creating a different css for that 
 7. Add the sound track
+
+
+<a onclick="playSound('1.mp3')">
+   <img src="1.gif">
+</a>
+<div id="sound"></div>
+
+<script>
+   var playSound = function (soundFile) {
+      $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
+   }
+</script>
+
 */
 
 var StarWars = ['1','2','3','4','5','6','7','8','9'];
@@ -23,7 +36,13 @@ noofGames =0;
 
 $(document).ready(function() {
 
+var playSound = function(soundFile) {
 
+  $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
+
+}
+
+ playSound("sounds/StarWars.mp3");
 $('.playgrid').on('click',function() {
 
   console.log('inside click event');
@@ -39,11 +58,13 @@ $('.playgrid').on('click',function() {
     if(currentPlayer === "Yoda") {
 
       movestr = 'Yoda';
+      playSound("sounds/SaberOn.wav");
       $(this).addClass('yoda');
 
     }else {
 
       movestr ='Darth';
+      playSound("sounds/sw4-lightsabre.wav");
       $(this).addClass('darth');
 
     } 
@@ -142,5 +163,6 @@ var resetGame = function() {
 
 
 }
+
 
 });
